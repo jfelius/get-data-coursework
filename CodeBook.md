@@ -32,110 +32,87 @@ Each line in summary of means (newdf) lists the mean values of all variables for
 - tBodyAcc.Y.sd
 - tBodyAcc.Z.sd : (numeric) Body acceleration, time domain signal, standard deviation of the x-, y-, and z-components
 
-tGravityAcc.X.mean
-tGravityAcc.Y.mean
-tGravityAcc.Z.mean
-	: (numeric) Gravitational acceleration, time domain signal, mean values of the x-, y-, and z-components
+- tGravityAcc.X.mean
+- tGravityAcc.Y.mean
+- tGravityAcc.Z.mean : (numeric) Gravitational acceleration, time domain signal, mean values of the x-, y-, and z-components
 
-tGravityAcc.X.sd
-tGravityAcc.Y.sd
-tGravityAcc.Z.sd
-	: (numeric) Gravitational acceleration, time domain signal, standard deviation of the x-, y-, and z-components
+- tGravityAcc.X.sd
+- tGravityAcc.Y.sd
+- tGravityAcc.Z.sd : (numeric) Gravitational acceleration, time domain signal, standard deviation of the x-, y-, and z-components
 
-tBodyAccJerk.X.mean
-tBodyAccJerk.Y.mean
-tBodyAccJerk.Z.mean
-	: (numeric) Body acceleration jerk, time domain signal, mean values of the  x-, y-, and z-components
+- tBodyAccJerk.X.mean
+- tBodyAccJerk.Y.mean
+- tBodyAccJerk.Z.mean : (numeric) Body acceleration jerk, time domain signal, mean values of the  x-, y-, and z-components
 
-tBodyAccJerk.X.sd
-tBodyAccJerk.Y.sd
-tBodyAccJerk.Z.sd
-	: (numeric) Body acceleration jerk, time domain signal, standard deviation of the  x-, y-, and z-components
+- tBodyAccJerk.X.sd
+- tBodyAccJerk.Y.sd
+- tBodyAccJerk.Z.sd : (numeric) Body acceleration jerk, time domain signal, standard deviation of the  x-, y-, and z-components
 
-tBodyGyro.X.mean
-tBodyGyro.Y.mean
-tBodyGyro.Z.mean
-	: (numeric) Body gyroscopic motion, time domain signal, mean values of the  x-, y-, and z-components
+- tBodyGyro.X.mean
+- tBodyGyro.Y.mean
+- tBodyGyro.Z.mean : (numeric) Body gyroscopic motion, time domain signal, mean values of the  x-, y-, and z-components
 
-tBodyGyro.X.sd
-tBodyGyro.Y.sd
-tBodyGyro.Z.sd
-	: (numeric) Body gyroscopic motion, time domain signal, standard deviation of the  x-, y-, and z-components
+- tBodyGyro.X.sd
+- tBodyGyro.Y.sd
+- tBodyGyro.Z.sd : (numeric) Body gyroscopic motion, time domain signal, standard deviation of the  x-, y-, and z-components
 
-tBodyGyroJerk.X.mean
-tBodyGyroJerk.Y.mean
-tBodyGyroJerk.Z.mean
-	: (numeric) Body gyroscopic jerk, time domain signal, mean values of the  x-, y-, and z-components
+- tBodyGyroJerk.X.mean
+- tBodyGyroJerk.Y.mean
+- tBodyGyroJerk.Z.mean : (numeric) Body gyroscopic jerk, time domain signal, mean values of the  x-, y-, and z-components
 
-tBodyGyroJerk.X.sd
-tBodyGyroJerk.Y.sd
-tBodyGyroJerk.Z.sd
-	: (numeric) Body gyroscopic jerk, time domain signal, standard deviation of the  x-, y-, and z-components
+- tBodyGyroJerk.X.sd
+- tBodyGyroJerk.Y.sd
+- tBodyGyroJerk.Z.sd : (numeric) Body gyroscopic jerk, time domain signal, standard deviation of the  x-, y-, and z-components
 
-tBodyAccMag.mean
-tBodyAccMag.sd
-	: (numeric) Body acceleration, time domain signal, mean and standard deviation of the vector magnitude
+- tBodyAccMag.mean
+- tBodyAccMag.sd	: (numeric) Body acceleration, time domain signal, mean and standard deviation of the vector magnitude
 
-tGravityAccMag.mean
-tGravityAccMag.sd
-	: (numeric) Gravitational acceleration, time domain signal, mean and standard deviation of the vector magnitude
+- tGravityAccMag.mean
+- tGravityAccMag.sd : (numeric) Gravitational acceleration, time domain signal, mean and standard deviation of the vector magnitude
 
-tBodyAccJerkMag.mean
-tBodyAccJerkMag.sd
-	: (numeric) Body acceleration jerk, time domain signal, mean and standard deviation of the vector magnitude
+- tBodyAccJerkMag.mean
+- tBodyAccJerkMag.sd : (numeric) Body acceleration jerk, time domain signal, mean and standard deviation of the vector magnitude
 
-tBodyGyroMag.mean
-tBodyGyroMag.sd
-	: (numeric) Body gyroscopic motion, time domain signal, mean and standard deviation of the vector magnitude
+- tBodyGyroMag.mean
+- tBodyGyroMag.sd : (numeric) Body gyroscopic motion, time domain signal, mean and standard deviation of the vector magnitude
 
-tBodyGyroJerkMag.mean
-tBodyGyroJerkMag.sd
-	: (numeric) Body gyroscopic jerk, time domain signal, mean and standard deviation of the vector magnitude
+- tBodyGyroJerkMag.mean
+- tBodyGyroJerkMag.sd : (numeric) Body gyroscopic jerk, time domain signal, mean and standard deviation of the vector magnitude
 
-fBodyAcc.X.mean
-fBodyAcc.Y.mean
-fBodyAcc.Z.mean
-	: (numeric) Body acceleration, frequency domain signal, mean values of the x-, y-, and z-components
+- fBodyAcc.X.mean
+- fBodyAcc.Y.mean
+- fBodyAcc.Z.mean : (numeric) Body acceleration, frequency domain signal, mean values of the x-, y-, and z-components
 
-fBodyAcc.X.sd
-fBodyAcc.Y.sd
-fBodyAcc.Z.sd
-	: (numeric) Body acceleration, frequency domain signal, standard deviation of the x-, y-, and z-components
+- fBodyAcc.X.sd
+- fBodyAcc.Y.sd
+- fBodyAcc.Z.sd : (numeric) Body acceleration, frequency domain signal, standard deviation of the x-, y-, and z-components
 
-fBodyAccJerk.X.mean
-fBodyAccJerk.Y.mean
-fBodyAccJerk.Z.mean
-	: (numeric) Body acceleration jerk, frequency domain signal, mean values of the x-, y-, and z-components
+- fBodyAccJerk.X.mean
+- fBodyAccJerk.Y.mean
+- fBodyAccJerk.Z.mean : (numeric) Body acceleration jerk, frequency domain signal, mean values of the x-, y-, and z-components
 
-fBodyAccJerk.X.sd
-fBodyAccJerk.Y.sd
-fBodyAccJerk.Z.sd
-	: (numeric) Body acceleration jerk, frequency domain signal, standard deviation of the x-, y-, and z-components
+- fBodyAccJerk.X.sd
+- fBodyAccJerk.Y.sd
+- fBodyAccJerk.Z.sd : (numeric) Body acceleration jerk, frequency domain signal, standard deviation of the x-, y-, and z-components
 
-fBodyGyro.X.mean
-fBodyGyro.Y.mean
-fBodyGyro.Z.mean
-	: (numeric) Body gyroscopic motion, frequency domain signal, mean values of the x-, y-, and z-components
+- fBodyGyro.X.mean
+- fBodyGyro.Y.mean
+- fBodyGyro.Z.mean : (numeric) Body gyroscopic motion, frequency domain signal, mean values of the x-, y-, and z-components
 
-fBodyGyro.X.sd
-fBodyGyro.Y.sd
-fBodyGyro.Z.sd
-	: (numeric) Body gyroscopic motion, frequency domain signal, standard deviation of the x-, y-, and z-components
+- fBodyGyro.X.sd
+- fBodyGyro.Y.sd
+- fBodyGyro.Z.sd : (numeric) Body gyroscopic motion, frequency domain signal, standard deviation of the x-, y-, and z-components
 
-fBodyAccMag.mean
-fBodyAccMag.sd
-	: (numeric) Body acceleration, frequency domain signal, mean and standard deviation of the vector magnitude
+- fBodyAccMag.mean
+- fBodyAccMag.sd : (numeric) Body acceleration, frequency domain signal, mean and standard deviation of the vector magnitude
 
-fBodyAccJerkMag.mean
-fBodyAccJerkMag.sd
-	: (numeric) Body acceleration jerk, frequency domain signal, mean and standard deviation of the vector magnitude
+- fBodyAccJerkMag.mean
+- fBodyAccJerkMag.sd : (numeric) Body acceleration jerk, frequency domain signal, mean and standard deviation of the vector magnitude
 
-fBodyGyroMag.mean
-fBodyGyroMag.sd
-	: (numeric) Body gyroscopic motion, frequency domain signal, mean and standard deviation of the vector magnitude
+- fBodyGyroMag.mean
+- fBodyGyroMag.sd : (numeric) Body gyroscopic motion, frequency domain signal, mean and standard deviation of the vector magnitude
 
-fBodyGyroJerkMag.mean
-fBodyGyroJerkMag.sd
-	: (numeric) Body gyroscopic jerk, frequency domain signal, mean and standard deviation of the vector magnitude
+- fBodyGyroJerkMag.mean
+- fBodyGyroJerkMag.sd : (numeric) Body gyroscopic jerk, frequency domain signal, mean and standard deviation of the vector magnitude
 
 
