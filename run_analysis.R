@@ -12,12 +12,16 @@ train.set <- read.table("train/X_train.txt")
 # Merge the 2 data frames:
 df <- rbind(test.set, train.set)
 
-# Keep only selected variables:
-# (These are the column numbers that have all the 'means' and 'standard deviations'.)
-df <- select(df, c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 214:215, 227:228, 240:241,
-                    253:254, 266:271, 345:350, 424:429, 503:504, 516:517, 529:530, 542:543))
+# Get variable names from separate file:
+varNames <- read.table("features.txt")
+names(df) <- varNames[,2]
 
-# Give variable names (NOTE: I stored them in a separate file because it is such a very long list)
+# Keep only selected variables:
+# (These are the columns that have all the 'means' and 'standard deviations'.)
+selection <- sort( c( grep("mean()",names(df),fixed=TRUE), grep("std()",names(df),fixed=TRUE) ) )
+df <- df[ , selection]
+
+# Give new variable names (NOTE: I stored them in a file because it is still a very long list)
 varNames <- read.table("newVarNames.txt")
 names(df) <- varNames[,1]
 
@@ -30,9 +34,9 @@ test.activity <- read.table("test/y_test.txt")
 train.activity <- read.table("train/y_train.txt")
 activity <- rbind(test.activity, train.activity)
 
-# Create a 'group' variable to indicate which group each observation belongs to ('Test' or 'Train').
-# (This was not part of the assignment, but I would always do this to make it easier to trace back
-# later. For the time being, I am not using it.)
+# [Optional] Create a 'group' variable to indicate which group each observation belongs to ('Test' 
+# or 'Train'). This was not specified in the assignment, but I would always do this to make it easier
+# to trace back later. For the time being, I am not using it.
 group <- c(rep("Test", nrow(test.set)), rep("Train", nrow(train.set)))
 
 # Add the 'subject', and 'activity' variables to the data frame:
@@ -48,7 +52,8 @@ df$activity[df$activity==5] <- "Standing"
 df$activity[df$activity==6] <- "Laying"
 
 #####
-# At this point the data frame 'df' is ready to be analyzed / summarized.
+# At this point the dataframe 'df' is tidy and ready to be analyzed / summarized.
+#####
 
 # Group all observations by 'subject' and by 'activity':
 person.activity <- group_by(df, subject, activity)
@@ -57,4 +62,5 @@ person.activity <- group_by(df, subject, activity)
 newdf <- summarise_each(person.activity, funs(mean))
 
 # Write to text file (for upload to Course Assignment website)
-write.table(newdf, file="tidySummary_of_means.txt", row.names=FALSE)
+write.table(newdf, file="Summary_of_PersonActivityMeans.txt", row.names=FALSE)
+
